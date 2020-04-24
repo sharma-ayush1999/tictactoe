@@ -1,0 +1,394 @@
+body{
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0px;
+	
+}
+.heading{
+	background-color: #00cc99;
+	text-align: center;
+	padding: 10px;
+	border: 5px solid #00995c;
+	font-family: 'Barriecito', cursive;
+}
+h1{
+	margin: 0px;
+	font-size: 60px;
+}
+h2{
+	background-color:  #9900ff;
+	font-size: 30px;
+	margin: 0px auto;
+}
+h3{
+	font-family: 'Ultra', serif;
+	font-size: 30px;
+	font-weight: 200;
+	margin: 0px auto;
+	background-color: #07ff006e;
+}
+.input{
+  width:100%;
+  height:100%;
+  font-size:90px;
+  border:0px;
+  background-color:transparent;
+  color:black;
+  transition-duration:0.3s;
+}
+.input:hover {
+  background-color:#9b9b9ba8;
+  opacity: 0.5;
+}
+#addnew{
+	font-size: 40px;
+	font-family: 'Federo', sans-serif;
+}
+.summary{
+	background-color: #ff8080;
+	width: 30%;
+	height: 1000px;
+	text-align: center;
+	float: left;
+	border: 5px solid #4b291f54;
+	font-family: 'Macondo Swash Caps', cursive;
+}	
+.round{
+	float: right;
+	background-color: #ff8080;
+	width: 30%;
+	height: 1000px;
+	text-align: center;
+	border: 5px solid #4b291f54;
+	font-family: 'Macondo Swash Caps', cursive;
+}
+#gamesum{
+	font-size: 30px;
+}
+#players{
+	display: none;
+	font-size: 27px;
+	font-family: 'Barriecito', cursive;
+}
+#p1{
+	float: left;
+	margin-left: 30px;
+}
+#p2{
+	float: right;
+	margin-right: 58px;
+}
+.playboard{
+	background-color: #22ae32b0;
+	width: 40%;
+	height: 1000px;
+	margin: 0px auto;
+}
+#playgamenow{
+	display: none;
+	width: 88%;
+	margin: 0px auto;
+	margin-top: 105px;
+}
+table{
+	position: relative;
+	margin: 0px auto;
+	margin-top: 60px;
+}
+td{
+	height: 155px;
+	width: 175px;
+}
+.endgame{
+	width: 200px;
+	background-color: red;
+	position: absolute;
+	top: 120px;
+	left: 50%;
+}
+.vertical{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+.top{
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;	
+}
+#res{
+	margin: 0px auto;
+	margin-top: 1%;
+	background-color: #cc0000;
+	font-family: 'Sigmar One', cursive;
+	border-color: #9900004f;
+	font-size: 15px;
+	padding: 6px;
+}
+#play{
+	margin:0px auto;
+    margin-top: 4px;
+    border-radius: 14%;
+    background-color: #9900ff;
+    font-family: 'Sigmar One', cursive;
+    border-color: #000000;
+    font-size: 19px;
+    padding: 10px 10px 10px 10px;
+}
+#playnow{
+	margin-top: 4px;
+    border-radius: 14%;
+    background-color:#ff0009 ;
+    font-family: 'Sigmar One', cursive;
+    border-color: #ca131369;
+    font-size: 26px;
+}
+#res:hover{
+	transform: scale(1.1);
+	transition: 0.2s ease;
+	background-color: #00cc99;
+	border-color: #aec2b04f;
+}
+#play:hover{
+	transform: scale(1.1);
+	font-size: 20px;
+
+}
+.relative{
+	position: relative;
+}
+#ask{
+	font-size: 30px;
+	display: none;
+	position: absolute;
+	top: 28%;
+	right: 30%;
+	background-color: #32383545;
+	width: 40%;
+	padding: 11%;
+	padding-bottom: 12%;
+}
+
+img{
+	width: 50%;
+}
+#img1{
+	display: none;
+}
+#rounds{
+	font-size: 25px;
+	font-family: 'Orbitron', sans-serif;
+}
+#popup {
+  font-size: 65px;
+  font-family: 'Permanent Marker', cursive;
+  z-index:5;
+  position:fixed;
+  left:30%;
+  top:30%;
+  width:40%;
+  padding:70px;
+  visibility:hidden;
+  background-color:#8103d5eb;
+  color:black;
+  box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+}
+#popupbutton {
+  font-size:30px; 
+  font-family: 'Permanent Marker', cursive;
+  padding: 5px 20px 6px 24px; */
+  width: 25%;
+  background-color: #239131;
+  }
+#overlay {
+   position:fixed;
+   top:0px;
+   left:0px;
+   width:100%;
+   height:100%;
+   background-color:#000000;
+   opacity:0.5;
+   visibility:hidden;
+}
+@media only screen and (max-width: 1024px) and (min-width: 540px){
+	#ask {
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    top: 33%;
+    right: 30%;
+    width: 40%;
+    background-color: #32383545;
+    padding: 11%;
+    padding-bottom: 12%;
+}
+#playgamenow{
+	display: none;
+	width: 100%;
+	margin: 0px auto;
+	margin-top: 105px;
+}
+td{
+	width: 127px;
+}
+.input {
+    width: 100%;
+    height: 69%;
+    font-size: 72px;
+    border: 0px;
+    background-color: transparent;
+    color: black;
+    transition-duration: 0.3s;
+}
+#rounds {
+    font-size: 21px;
+    font-family: 'Orbitron', sans-serif;
+}
+#res {
+    margin: 0px auto;
+    margin-top: 1%;
+    background-color: #cc0000;
+    font-family: 'Sigmar One', cursive;
+    border-color: #9900004f;
+    font-size: 14px;
+    padding: 0px;
+}
+#play {
+    margin: 0px auto;
+    margin-top: 4px;
+    border-radius: 14%;
+    background-color: #9900ff;
+    font-family: 'Sigmar One', cursive;
+    border-color: #000000;
+    font-size: 17px;
+    padding: 2px 2px 2px 2px;
+}
+#playnow {
+    margin-top: 4px;
+    border-radius: 14%;
+    background-color: #ff0009;
+    font-family: 'Sigmar One', cursive;
+    border-color: #ca131369;
+    font-size: 18px;
+}
+#popup {
+    font-size: 34px;
+    font-family: 'Permanent Marker', cursive;
+    z-index: 5;
+    position: fixed;
+    left: 30%;
+    top: 34%;
+    width: 40%;
+    padding: 20px;
+    visibility: hidden;
+    background-color: #8103d5eb;
+    color: black;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+#popupbutton {
+    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+    padding: 6px 15px 6px 15px;
+    width: 25%;
+    background-color: #239131;
+}
+#addnew {
+    font-size: 23px;
+    font-family: 'Federo', sans-serif;
+}
+}
+@media only screen and (max-width: 540px) and (min-width: 320px){
+	#ask {
+    font-size: 17px;
+    display: none;
+    position: absolute;
+    top: 33%;
+    right: 30%;
+    width: 40%;
+    background-color: #32383545;
+    padding: 11%;
+    padding-bottom: 12%;
+}
+#playgamenow{
+	display: none;
+	width: 100%;
+	margin: 0px auto;
+	margin-top: 130px;
+}
+td{
+	width: 127px;
+	height: 100px;
+}
+.input {
+    width: 100%;
+    height: 69%;
+    font-size: 40px;
+    border: 0px;
+    background-color: transparent;
+    color: black;
+    transition-duration: 0.3s;
+}
+#rounds {
+    font-size: 17px;
+    font-family: 'Orbitron', sans-serif;
+}
+#res {
+    margin: 0px auto;
+    margin-top: 1%;
+    background-color: #cc0000;
+    font-family: 'Sigmar One', cursive;
+    border-color: #9900004f;
+    font-size: 14px;
+    padding: 0px;
+}
+#play {
+    margin: 0px auto;
+    margin-top: 4px;
+    border-radius: 14%;
+    background-color: #9900ff;
+    font-family: 'Sigmar One', cursive;
+    border-color: #000000;
+    font-size: 17px;
+    padding: 2px 2px 2px 2px;
+}
+#playnow {
+    margin-top: 4px;
+    border-radius: 14%;
+    background-color: #ff0009;
+    font-family: 'Sigmar One', cursive;
+    border-color: #ca131369;
+    font-size: 18px;
+}
+#popup {
+    font-size: 34px;
+    font-family: 'Permanent Marker', cursive;
+    z-index: 5;
+    position: fixed;
+    left: 30%;
+    top: 34%;
+    width: 40%;
+    padding: 8px;
+    visibility: hidden;
+    background-color: #8103d5eb;
+    color: black;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+#popupbutton {
+    font-size: 15px;
+    font-family: 'Permanent Marker', cursive;
+    padding: 5px 20px 6px 24px;
+    width: 40%;
+    background-color: #239131;
+}
+#addnew {
+    font-size: 18px;
+    font-family: 'Federo', sans-serif;
+}
+h2 {
+    background-color: #9900ff;
+    font-size: 23px;
+    margin: 0px auto;
+}
+h1 {
+    margin: 0px;
+    font-size: 42px;
+}
+}

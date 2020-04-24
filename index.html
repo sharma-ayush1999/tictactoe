@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="css/fw.css">
+	<link rel="stylesheet" type="text/css" href="css/tictactoe.css">
+	<link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ultra&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Federo&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<script type="text/javascript" src="tictactoe.js"></script>
+	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+</head>
+<body>
+	<div class="heading over">
+	<h1>TIC TAC TOE</h1>
+	</div>
+		<div id="sumr" class="summary _33">
+			<h2>Game Summary</h2>
+			<div id="addnew"></div>
+		</div>
+		<div class="playboard _33 mar0">
+			<button id="play" onclick="selection()">Let's Go!</button>
+			<table class="relative" id="playgamenow">
+				<tr>
+					<td class="block"><input onclick="game(1)" type="button" class="input" id="one" value=""></td>
+					<td class="block vertical"onclick=""><input onclick="game(2)" type="button" class="input" id="two" value=""></td>
+					<td class="block"  onclick=""><input type="button" onclick="game(3)" class="input" id="three" value=""></td>
+				</tr>
+				<tr>
+					<td class="block top" onclick=""><input onclick="game(4)" type="button" class="input" id="four" value=""></td>
+					<td class="block top vertical" onclick=""><input onclick="game(5)" type="button" class="input" id="five" value=""></td>
+					<td class="block top"onclick=""><input onclick="game(6)" type="button" class="input" id="six" value=""></td>
+				</tr>
+				<tr>
+					<td class="block" ionclick=""><input onclick="game(7)" type="button" class="input" id="seven" value=""></td>
+					<td class="block vertical" ionclick=""><input onclick="game(8)" type="button" class="input" id="eight" value=""></td>
+					<td class="block" onclick=""><input onclick="game(9)" type="button" class="input" id="nine" value=""></td>
+				</tr>
+			</table>
+			<div id="ask">
+				<h4>Select your choice</h4>
+				<label>X<input type="radio" name="select" id="radio1" value="X"></label>
+				<label>O<input type="radio" name="select" id="radio2" value="O"></label>
+				<button id="playnow" onclick="players()">Play</button>
+			</div>
+		</div>	
+		<div class="round _33">
+			<h2>Rounds Played</h2>
+			<p id="rounds"></p>
+			<div>
+				<button id="res" onclick="getblock()">RESET</button>
+			</div>
+		</div>
+	</div>
+	<section align="center" id="popup">
+  		<p id="text">text</p>
+  		<button id="popupbutton" onclick="getblock1()">Ok</button>
+  	</section>
+ 	<section id="overlay"></section>
+ </body>
+</html>
